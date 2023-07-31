@@ -14,14 +14,11 @@ function reverseMessage() {
 function notify() {
   alert('navigation was prevented.')
 }
-
 </script>
 
 <template>
-
   <h1> {{ message }}</h1>
   <br>
-
   <button @click="reverseMessage">Reverse Message</button>
 
   <button @click="message += 'Added to the message!'">Append</button>
@@ -38,9 +35,6 @@ function notify() {
     <p v-else-if="list.length">List is not empty, but hidden.</p>
     <p v-else>List is empty.</p>
   </div>
-
 </template>
-
 <style scoped>
-
 </style>
